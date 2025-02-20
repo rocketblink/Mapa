@@ -1,0 +1,2070 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_432d095b2ad2d52f176a022332ce1c77 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_432d095b2ad2d52f176a022332ce1c77" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_432d095b2ad2d52f176a022332ce1c77 = L.map(
+                "map_432d095b2ad2d52f176a022332ce1c77",
+                {
+                    center: [-23.56987016273497, -46.67355529701148],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_66dcbd8334c8fe319768e26970f281d0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_66dcbd8334c8fe319768e26970f281d0.addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var tile_layer_0b3148125b1a5d17a9d6c5abd934c7f5 = L.tileLayer(
+                "https://{s}.tile.thunderforest.com/mobile-atlas/{z}/{x}/{y}.png?apikey=20eac58f4f30435fa113c9fefdd58e88",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"http://www.thunderforest.com/\"\u003eThunderforest\u003c/a\u003e, \u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0b3148125b1a5d17a9d6c5abd934c7f5.addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var layer_control_a58ae2d4c1a39a624c3a60388a733672_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_66dcbd8334c8fe319768e26970f281d0,
+                    "Thunderforest.MobileAtlas" : tile_layer_0b3148125b1a5d17a9d6c5abd934c7f5,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_a58ae2d4c1a39a624c3a60388a733672 = L.control.layers(
+                layer_control_a58ae2d4c1a39a624c3a60388a733672_layers.base_layers,
+                layer_control_a58ae2d4c1a39a624c3a60388a733672_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+
+        
+    
+            var marker_0c67bd8b37603b8d03c0804ad3c7864c = L.marker(
+                [-23.682087313357446, -46.58422028609791],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_589ab0066b3f784c39f06cf4280513b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0c67bd8b37603b8d03c0804ad3c7864c.setIcon(icon_589ab0066b3f784c39f06cf4280513b9);
+        
+    
+        var popup_6c792d020354acecc3bda184554b7883 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ddb12168e9e188f63ead7b0fdf9ef8f9 = $(`<div id="html_ddb12168e9e188f63ead7b0fdf9ef8f9" style="width: 100.0%; height: 100.0%;">Diadema - Piraporinha</div>`)[0];
+                popup_6c792d020354acecc3bda184554b7883.setContent(html_ddb12168e9e188f63ead7b0fdf9ef8f9);
+            
+        
+
+        marker_0c67bd8b37603b8d03c0804ad3c7864c.bindPopup(popup_6c792d020354acecc3bda184554b7883)
+        ;
+
+        
+    
+    
+            var marker_d1a7a4907d7424ead0037fd3d3d1976d = L.marker(
+                [-23.699431897147473, -46.56848546409123],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_ae990d4066ff9063b1f604c5d1976e43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d1a7a4907d7424ead0037fd3d3d1976d.setIcon(icon_ae990d4066ff9063b1f604c5d1976e43);
+        
+    
+        var popup_45cdb330f5e1ec36532d11a881e9e838 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a864cc8371c2e13def834292e8d6f4a = $(`<div id="html_0a864cc8371c2e13def834292e8d6f4a" style="width: 100.0%; height: 100.0%;">São Bernardo Do Campo - Planalto</div>`)[0];
+                popup_45cdb330f5e1ec36532d11a881e9e838.setContent(html_0a864cc8371c2e13def834292e8d6f4a);
+            
+        
+
+        marker_d1a7a4907d7424ead0037fd3d3d1976d.bindPopup(popup_45cdb330f5e1ec36532d11a881e9e838)
+        ;
+
+        
+    
+    
+            var marker_d05521d62b5ba9558c242172a6d3f95d = L.marker(
+                [-23.42099724644699, -46.420675232192735],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_5eda6ae02f8e2f8f363c1559cd3069cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d05521d62b5ba9558c242172a6d3f95d.setIcon(icon_5eda6ae02f8e2f8f363c1559cd3069cb);
+        
+    
+        var popup_4274e01209442219b226d4a5c7b6d025 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aedf1cf96dab910cd956a441138b8e96 = $(`<div id="html_aedf1cf96dab910cd956a441138b8e96" style="width: 100.0%; height: 100.0%;">Guarulhos - Residencial Parque Cumbica</div>`)[0];
+                popup_4274e01209442219b226d4a5c7b6d025.setContent(html_aedf1cf96dab910cd956a441138b8e96);
+            
+        
+
+        marker_d05521d62b5ba9558c242172a6d3f95d.bindPopup(popup_4274e01209442219b226d4a5c7b6d025)
+        ;
+
+        
+    
+    
+            var marker_adb645c5800e02af32e6a57b1d017450 = L.marker(
+                [-23.6622684314154, -46.79080607573001],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_6a713fa8f06831821dead18cda60cedf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_adb645c5800e02af32e6a57b1d017450.setIcon(icon_6a713fa8f06831821dead18cda60cedf);
+        
+    
+        var popup_6c115526b07b11a7f3d5f6920775ac0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0de25e0028119a2789ce02ac9d89147f = $(`<div id="html_0de25e0028119a2789ce02ac9d89147f" style="width: 100.0%; height: 100.0%;">São Paulo - Jardim Irapiranga</div>`)[0];
+                popup_6c115526b07b11a7f3d5f6920775ac0a.setContent(html_0de25e0028119a2789ce02ac9d89147f);
+            
+        
+
+        marker_adb645c5800e02af32e6a57b1d017450.bindPopup(popup_6c115526b07b11a7f3d5f6920775ac0a)
+        ;
+
+        
+    
+    
+            var marker_e7948d9e98d61aa928db1f04799d4293 = L.marker(
+                [-23.42666436248182, -46.54839860048447],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_c2afc48eba120a182695f5eab642b642 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e7948d9e98d61aa928db1f04799d4293.setIcon(icon_c2afc48eba120a182695f5eab642b642);
+        
+    
+        var popup_2edc2f8d947ea5b92d6992e707b39bb5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e11d3a147c9b5a0b3f97466cd3d38c3d = $(`<div id="html_e11d3a147c9b5a0b3f97466cd3d38c3d" style="width: 100.0%; height: 100.0%;">Guarulhos - Parque Continental Ii</div>`)[0];
+                popup_2edc2f8d947ea5b92d6992e707b39bb5.setContent(html_e11d3a147c9b5a0b3f97466cd3d38c3d);
+            
+        
+
+        marker_e7948d9e98d61aa928db1f04799d4293.bindPopup(popup_2edc2f8d947ea5b92d6992e707b39bb5)
+        ;
+
+        
+    
+    
+            var marker_f028f515a0c30fcb6e0ca54ac0e9d534 = L.marker(
+                [-23.435550716421883, -46.41629521199283],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_b7c81b9f274a2a1645c401c457995268 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f028f515a0c30fcb6e0ca54ac0e9d534.setIcon(icon_b7c81b9f274a2a1645c401c457995268);
+        
+    
+        var popup_f1b14b9a5ef07d35816688610dd7f048 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c3af1da639018c30ca4f4626e30a481 = $(`<div id="html_0c3af1da639018c30ca4f4626e30a481" style="width: 100.0%; height: 100.0%;">Guarulhos - Cidade Parque Brasília</div>`)[0];
+                popup_f1b14b9a5ef07d35816688610dd7f048.setContent(html_0c3af1da639018c30ca4f4626e30a481);
+            
+        
+
+        marker_f028f515a0c30fcb6e0ca54ac0e9d534.bindPopup(popup_f1b14b9a5ef07d35816688610dd7f048)
+        ;
+
+        
+    
+    
+            var marker_6f5ed97939dec7fcc4f94125708cc7f2 = L.marker(
+                [-23.46994123414766, -46.39440821798278],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_fb1a12e7ceaa41da5d3474606e360116 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6f5ed97939dec7fcc4f94125708cc7f2.setIcon(icon_fb1a12e7ceaa41da5d3474606e360116);
+        
+    
+        var popup_e7958c69735b3df60212dcc7b0171de9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_47f96b555468c49a172da5b9d5ebfb36 = $(`<div id="html_47f96b555468c49a172da5b9d5ebfb36" style="width: 100.0%; height: 100.0%;">Guarulhos - Itaim</div>`)[0];
+                popup_e7958c69735b3df60212dcc7b0171de9.setContent(html_47f96b555468c49a172da5b9d5ebfb36);
+            
+        
+
+        marker_6f5ed97939dec7fcc4f94125708cc7f2.bindPopup(popup_e7958c69735b3df60212dcc7b0171de9)
+        ;
+
+        
+    
+    
+            var marker_cbca75226d816ac1bb5776afbe7979a5 = L.marker(
+                [-23.666517244221698, -46.475966010547594],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_a8703f58a16cb763bca253d56c0ab188 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_cbca75226d816ac1bb5776afbe7979a5.setIcon(icon_a8703f58a16cb763bca253d56c0ab188);
+        
+    
+        var popup_72b8e7119f3720ba1d39cc231fabaf10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8e64b2a415d13148146f2b8a4da0b2e = $(`<div id="html_b8e64b2a415d13148146f2b8a4da0b2e" style="width: 100.0%; height: 100.0%;">Mauá - Parque São Vicente</div>`)[0];
+                popup_72b8e7119f3720ba1d39cc231fabaf10.setContent(html_b8e64b2a415d13148146f2b8a4da0b2e);
+            
+        
+
+        marker_cbca75226d816ac1bb5776afbe7979a5.bindPopup(popup_72b8e7119f3720ba1d39cc231fabaf10)
+        ;
+
+        
+    
+    
+            var marker_b3166702457bb98783ae59194896e729 = L.marker(
+                [-23.485282794706166, -46.712405278919626],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_b97c73f746d7558ab9f6dab79a24206a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b3166702457bb98783ae59194896e729.setIcon(icon_b97c73f746d7558ab9f6dab79a24206a);
+        
+    
+        var popup_896b0470438e0b81f5b45f6a4de5a11d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82752e52d9b9c17eaf562dda6978c005 = $(`<div id="html_82752e52d9b9c17eaf562dda6978c005" style="width: 100.0%; height: 100.0%;">São Paulo - Jardim São José</div>`)[0];
+                popup_896b0470438e0b81f5b45f6a4de5a11d.setContent(html_82752e52d9b9c17eaf562dda6978c005);
+            
+        
+
+        marker_b3166702457bb98783ae59194896e729.bindPopup(popup_896b0470438e0b81f5b45f6a4de5a11d)
+        ;
+
+        
+    
+    
+            var marker_bb2835ad2f289ad3e2dada98f5e3e7f8 = L.marker(
+                [-23.829512968638117, -46.722377042952246],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_76409a2682058d3f507a742cffdc8c77 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bb2835ad2f289ad3e2dada98f5e3e7f8.setIcon(icon_76409a2682058d3f507a742cffdc8c77);
+        
+    
+        var popup_512f4542e71afdbe2dd8c2f7e24f1ccc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c01b70bae684d689c68a78fe897f1e88 = $(`<div id="html_c01b70bae684d689c68a78fe897f1e88" style="width: 100.0%; height: 100.0%;">São Paulo - Jardim Novo Parelheiros</div>`)[0];
+                popup_512f4542e71afdbe2dd8c2f7e24f1ccc.setContent(html_c01b70bae684d689c68a78fe897f1e88);
+            
+        
+
+        marker_bb2835ad2f289ad3e2dada98f5e3e7f8.bindPopup(popup_512f4542e71afdbe2dd8c2f7e24f1ccc)
+        ;
+
+        
+    
+    
+            var marker_7713eb1b2b4e016c3f09d36dd0654d15 = L.marker(
+                [-23.55970379039268, -46.839046814266815],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_d63c7d44c42ade5318fcfcdb7b5224cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7713eb1b2b4e016c3f09d36dd0654d15.setIcon(icon_d63c7d44c42ade5318fcfcdb7b5224cb);
+        
+    
+        var popup_5bb23d68d0931136e66af84d342ef8e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_764761755e4772b4f216adf10d8e2fd3 = $(`<div id="html_764761755e4772b4f216adf10d8e2fd3" style="width: 100.0%; height: 100.0%;">Carapicuíba - Vila Dirce</div>`)[0];
+                popup_5bb23d68d0931136e66af84d342ef8e8.setContent(html_764761755e4772b4f216adf10d8e2fd3);
+            
+        
+
+        marker_7713eb1b2b4e016c3f09d36dd0654d15.bindPopup(popup_5bb23d68d0931136e66af84d342ef8e8)
+        ;
+
+        
+    
+    
+            var marker_2b86084dca9102b7acd09225184b0b9f = L.marker(
+                [-23.74948242999827, -46.66713338999751],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_0b6baabacd066da69ef7a4301d77a178 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2b86084dca9102b7acd09225184b0b9f.setIcon(icon_0b6baabacd066da69ef7a4301d77a178);
+        
+    
+        var popup_3cf0a1913b17ba385ffa31651834f691 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b908deea099115301ce23bbf5793c6bb = $(`<div id="html_b908deea099115301ce23bbf5793c6bb" style="width: 100.0%; height: 100.0%;">São Paulo - Vila Narciso</div>`)[0];
+                popup_3cf0a1913b17ba385ffa31651834f691.setContent(html_b908deea099115301ce23bbf5793c6bb);
+            
+        
+
+        marker_2b86084dca9102b7acd09225184b0b9f.bindPopup(popup_3cf0a1913b17ba385ffa31651834f691)
+        ;
+
+        
+    
+    
+            var marker_2fdf843fbad5cab0f1f4f127811d8869 = L.marker(
+                [-23.57224183966457, -46.51416683765291],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_5413aa775a22859ff230e18fea0eb2e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2fdf843fbad5cab0f1f4f127811d8869.setIcon(icon_5413aa775a22859ff230e18fea0eb2e7);
+        
+    
+        var popup_7a697785b0536452d6cc0712e27be171 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37a0285e3f667163904e611e938d0a06 = $(`<div id="html_37a0285e3f667163904e611e938d0a06" style="width: 100.0%; height: 100.0%;">São Paulo - Vila Antonieta</div>`)[0];
+                popup_7a697785b0536452d6cc0712e27be171.setContent(html_37a0285e3f667163904e611e938d0a06);
+            
+        
+
+        marker_2fdf843fbad5cab0f1f4f127811d8869.bindPopup(popup_7a697785b0536452d6cc0712e27be171)
+        ;
+
+        
+    
+    
+            var marker_da3fcab2737fd430378a2022404d6c3c = L.marker(
+                [-23.671604422113074, -46.61975458533856],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_375923b66b946596e0453fe8ccfa7b95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_da3fcab2737fd430378a2022404d6c3c.setIcon(icon_375923b66b946596e0453fe8ccfa7b95);
+        
+    
+        var popup_7f30456096f9c146c030d4034827b616 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fed4c645574ffb29b75699a2253292a7 = $(`<div id="html_fed4c645574ffb29b75699a2253292a7" style="width: 100.0%; height: 100.0%;">Diadema - Campanário</div>`)[0];
+                popup_7f30456096f9c146c030d4034827b616.setContent(html_fed4c645574ffb29b75699a2253292a7);
+            
+        
+
+        marker_da3fcab2737fd430378a2022404d6c3c.bindPopup(popup_7f30456096f9c146c030d4034827b616)
+        ;
+
+        
+    
+    
+            var marker_51e9e7bf11489059992216118b26e7fb = L.marker(
+                [-23.51918338271579, -46.374795599285264],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_f5c56f0074c6988727ec3dab89a68838 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_51e9e7bf11489059992216118b26e7fb.setIcon(icon_f5c56f0074c6988727ec3dab89a68838);
+        
+    
+        var popup_a5e4e9d9a456adb35bb3865ea3af0d00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_226233ce10b962f3dbfedaa495693cb9 = $(`<div id="html_226233ce10b962f3dbfedaa495693cb9" style="width: 100.0%; height: 100.0%;">Ferraz De Vasconcelos - Jardim São Fernando</div>`)[0];
+                popup_a5e4e9d9a456adb35bb3865ea3af0d00.setContent(html_226233ce10b962f3dbfedaa495693cb9);
+            
+        
+
+        marker_51e9e7bf11489059992216118b26e7fb.bindPopup(popup_a5e4e9d9a456adb35bb3865ea3af0d00)
+        ;
+
+        
+    
+    
+            var marker_f802f68e0f75714756cf6199e3b0fa8d = L.marker(
+                [-23.535565587323205, -46.8890284483603],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_bcd4e2264701a38f999c2ec6fc059d08 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f802f68e0f75714756cf6199e3b0fa8d.setIcon(icon_bcd4e2264701a38f999c2ec6fc059d08);
+        
+    
+        var popup_25875c9b83a7f32982fedb7ba0a9e201 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9777835f2fd208b01a651718082c16c = $(`<div id="html_a9777835f2fd208b01a651718082c16c" style="width: 100.0%; height: 100.0%;">Barueri - Parque Dos Camargos</div>`)[0];
+                popup_25875c9b83a7f32982fedb7ba0a9e201.setContent(html_a9777835f2fd208b01a651718082c16c);
+            
+        
+
+        marker_f802f68e0f75714756cf6199e3b0fa8d.bindPopup(popup_25875c9b83a7f32982fedb7ba0a9e201)
+        ;
+
+        
+    
+    
+            var marker_5a4a2738f74f87c3c4eca0b9c66b4a14 = L.marker(
+                [-23.57478074126682, -46.90795219949476],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_f4926af72aa90000d9f8b10f36e32b21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5a4a2738f74f87c3c4eca0b9c66b4a14.setIcon(icon_f4926af72aa90000d9f8b10f36e32b21);
+        
+    
+        var popup_09dc90842f3dd864ce3f0d0acbaa6749 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bbf510bf9d19959b3bc8ac7f73d2b2c0 = $(`<div id="html_bbf510bf9d19959b3bc8ac7f73d2b2c0" style="width: 100.0%; height: 100.0%;">Cotia - Granja Carneiro Viana </div>`)[0];
+                popup_09dc90842f3dd864ce3f0d0acbaa6749.setContent(html_bbf510bf9d19959b3bc8ac7f73d2b2c0);
+            
+        
+
+        marker_5a4a2738f74f87c3c4eca0b9c66b4a14.bindPopup(popup_09dc90842f3dd864ce3f0d0acbaa6749)
+        ;
+
+        
+    
+    
+            var marker_d24e17567f316b4a99f347e77a10683a = L.marker(
+                [-23.551685647532494, -46.83028091356473],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_7245cf54a4cf73cea87b0e8a729ce03d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d24e17567f316b4a99f347e77a10683a.setIcon(icon_7245cf54a4cf73cea87b0e8a729ce03d);
+        
+    
+        var popup_8526510f4bb06a58d3d6972178f3c9cc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de8d706387868a1582d0446eb8f9ce28 = $(`<div id="html_de8d706387868a1582d0446eb8f9ce28" style="width: 100.0%; height: 100.0%;">Carapicuíba - Vila Veloso</div>`)[0];
+                popup_8526510f4bb06a58d3d6972178f3c9cc.setContent(html_de8d706387868a1582d0446eb8f9ce28);
+            
+        
+
+        marker_d24e17567f316b4a99f347e77a10683a.bindPopup(popup_8526510f4bb06a58d3d6972178f3c9cc)
+        ;
+
+        
+    
+    
+            var marker_16ec7fba0f1ebc58ad0e43bc24cec5d0 = L.marker(
+                [-23.54829202451521, -46.82838039769884],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_c962b4869dcfc74b2cfd3455c89e081d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_16ec7fba0f1ebc58ad0e43bc24cec5d0.setIcon(icon_c962b4869dcfc74b2cfd3455c89e081d);
+        
+    
+        var popup_81eb6a4e1c08839e0ea099a81521b4ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b24521b0c69cb8eb6818140124fdcc6 = $(`<div id="html_9b24521b0c69cb8eb6818140124fdcc6" style="width: 100.0%; height: 100.0%;">Carapicuíba - Jardim Santa Tereza</div>`)[0];
+                popup_81eb6a4e1c08839e0ea099a81521b4ef.setContent(html_9b24521b0c69cb8eb6818140124fdcc6);
+            
+        
+
+        marker_16ec7fba0f1ebc58ad0e43bc24cec5d0.bindPopup(popup_81eb6a4e1c08839e0ea099a81521b4ef)
+        ;
+
+        
+    
+    
+            var marker_fd0bdd5212c6750cebe1d5cd2dc0c651 = L.marker(
+                [-23.564047646626964, -46.77890421873923],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_554fcc6948cec0a044122a7d67b818ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fd0bdd5212c6750cebe1d5cd2dc0c651.setIcon(icon_554fcc6948cec0a044122a7d67b818ae);
+        
+    
+        var popup_2773a6f0db8abe44d4ea66dda2ccc392 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c5ab5b979e02ec752040468eb64205e = $(`<div id="html_9c5ab5b979e02ec752040468eb64205e" style="width: 100.0%; height: 100.0%;">Osasco - Jardim D'abril</div>`)[0];
+                popup_2773a6f0db8abe44d4ea66dda2ccc392.setContent(html_9c5ab5b979e02ec752040468eb64205e);
+            
+        
+
+        marker_fd0bdd5212c6750cebe1d5cd2dc0c651.bindPopup(popup_2773a6f0db8abe44d4ea66dda2ccc392)
+        ;
+
+        
+    
+    
+            var marker_a243a37fcb341046c90d179935780acd = L.marker(
+                [-23.538960436556305, -46.902189555892264],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_48a6659f9c9479260a00972ab9fc78d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a243a37fcb341046c90d179935780acd.setIcon(icon_48a6659f9c9479260a00972ab9fc78d6);
+        
+    
+        var popup_bbfd37653dc7a711db4dd92fdfc83ff9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_91cae257a17560b51496176d8bcbad02 = $(`<div id="html_91cae257a17560b51496176d8bcbad02" style="width: 100.0%; height: 100.0%;">Jandira - Jardim Novo Horizonte</div>`)[0];
+                popup_bbfd37653dc7a711db4dd92fdfc83ff9.setContent(html_91cae257a17560b51496176d8bcbad02);
+            
+        
+
+        marker_a243a37fcb341046c90d179935780acd.bindPopup(popup_bbfd37653dc7a711db4dd92fdfc83ff9)
+        ;
+
+        
+    
+    
+            var marker_5589e64502527f44c4f51f2c8e3abd06 = L.marker(
+                [-23.62798178849934, -46.824322826693766],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_cf9808907bcb9ae784b40d683b39beb3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5589e64502527f44c4f51f2c8e3abd06.setIcon(icon_cf9808907bcb9ae784b40d683b39beb3);
+        
+    
+        var popup_b716579a9a61e6456fbe1a505305a298 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2beb7ce2cd162390068253cfd6684ca = $(`<div id="html_d2beb7ce2cd162390068253cfd6684ca" style="width: 100.0%; height: 100.0%;">Embu - Jardim Vista Alegre</div>`)[0];
+                popup_b716579a9a61e6456fbe1a505305a298.setContent(html_d2beb7ce2cd162390068253cfd6684ca);
+            
+        
+
+        marker_5589e64502527f44c4f51f2c8e3abd06.bindPopup(popup_b716579a9a61e6456fbe1a505305a298)
+        ;
+
+        
+    
+    
+            var marker_bda3abbfb14fdc48af12d625b9ea67d8 = L.marker(
+                [-23.518326314152606, -46.75544221985765],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_437db93bd189f534f24cddc67fb2fd03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bda3abbfb14fdc48af12d625b9ea67d8.setIcon(icon_437db93bd189f534f24cddc67fb2fd03);
+        
+    
+        var popup_239d0f9eed01bede1cf66fafa43f657b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fdeaa9b27dbddfeee03994f7b69af41c = $(`<div id="html_fdeaa9b27dbddfeee03994f7b69af41c" style="width: 100.0%; height: 100.0%;">Osasco - Remédios</div>`)[0];
+                popup_239d0f9eed01bede1cf66fafa43f657b.setContent(html_fdeaa9b27dbddfeee03994f7b69af41c);
+            
+        
+
+        marker_bda3abbfb14fdc48af12d625b9ea67d8.bindPopup(popup_239d0f9eed01bede1cf66fafa43f657b)
+        ;
+
+        
+    
+    
+            var marker_cb831f9d36806e3139c4789404f8e708 = L.marker(
+                [-23.439164833676223, -46.31847968398406],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_9ecacadb1a71511768dd4335ae7a3a32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_cb831f9d36806e3139c4789404f8e708.setIcon(icon_9ecacadb1a71511768dd4335ae7a3a32);
+        
+    
+        var popup_4d0ccc1bcedc1ba82f62454fea265603 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d429d68c2951c29d5d55e1c1d57294a0 = $(`<div id="html_d429d68c2951c29d5d55e1c1d57294a0" style="width: 100.0%; height: 100.0%;">Itaquaquecetuba - Jardim Caiubi</div>`)[0];
+                popup_4d0ccc1bcedc1ba82f62454fea265603.setContent(html_d429d68c2951c29d5d55e1c1d57294a0);
+            
+        
+
+        marker_cb831f9d36806e3139c4789404f8e708.bindPopup(popup_4d0ccc1bcedc1ba82f62454fea265603)
+        ;
+
+        
+    
+    
+            var marker_5ce0ede2419e17a6f9258f9f60be4036 = L.marker(
+                [-23.668334859644705, -47.042059152507484],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_aa299abe0e6ef16c43ca2a2ace72ef5b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5ce0ede2419e17a6f9258f9f60be4036.setIcon(icon_aa299abe0e6ef16c43ca2a2ace72ef5b);
+        
+    
+        var popup_e426594e59c072a936ce480941c95cf1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96ff51c74b3a962874d83fc1688f76f4 = $(`<div id="html_96ff51c74b3a962874d83fc1688f76f4" style="width: 100.0%; height: 100.0%;">Cotia - Água Espraiada (Caucaia Do Alto)</div>`)[0];
+                popup_e426594e59c072a936ce480941c95cf1.setContent(html_96ff51c74b3a962874d83fc1688f76f4);
+            
+        
+
+        marker_5ce0ede2419e17a6f9258f9f60be4036.bindPopup(popup_e426594e59c072a936ce480941c95cf1)
+        ;
+
+        
+    
+    
+            var marker_d55832e5476ca1eac1cbc683237f50df = L.marker(
+                [-23.629680731631122, -46.55968602320671],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_eea28c5503fde2b0add1e38d088bd387 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d55832e5476ca1eac1cbc683237f50df.setIcon(icon_eea28c5503fde2b0add1e38d088bd387);
+        
+    
+        var popup_d37a3488ab7ff195cbe0de0a6788777b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84d796042937117784661600cc458228 = $(`<div id="html_84d796042937117784661600cc458228" style="width: 100.0%; height: 100.0%;">São Caetano Do Sul - Olimpico</div>`)[0];
+                popup_d37a3488ab7ff195cbe0de0a6788777b.setContent(html_84d796042937117784661600cc458228);
+            
+        
+
+        marker_d55832e5476ca1eac1cbc683237f50df.bindPopup(popup_d37a3488ab7ff195cbe0de0a6788777b)
+        ;
+
+        
+    
+    
+            var marker_422effe492a6a73077a972fbc0900c32 = L.marker(
+                [-23.62350306409547, -46.53697516182862],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_5e33fe8b3e3570206c10606b7a41acd7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_422effe492a6a73077a972fbc0900c32.setIcon(icon_5e33fe8b3e3570206c10606b7a41acd7);
+        
+    
+        var popup_0d221ee697b4a47abae64f79b8947550 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fccd8c029c39405c7c8787cba1221b15 = $(`<div id="html_fccd8c029c39405c7c8787cba1221b15" style="width: 100.0%; height: 100.0%;">Santo André - Vila Metalúrgica</div>`)[0];
+                popup_0d221ee697b4a47abae64f79b8947550.setContent(html_fccd8c029c39405c7c8787cba1221b15);
+            
+        
+
+        marker_422effe492a6a73077a972fbc0900c32.bindPopup(popup_0d221ee697b4a47abae64f79b8947550)
+        ;
+
+        
+    
+    
+            var marker_039646c1547b3a59db5628923cc439fb = L.marker(
+                [-23.501282328922695, -46.770394375642574],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_8cc4c17b432cbd9bec5a6662c23def5f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_039646c1547b3a59db5628923cc439fb.setIcon(icon_8cc4c17b432cbd9bec5a6662c23def5f);
+        
+    
+        var popup_22044522ee28d48fb44d3efbfa72c2d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51074cf3ad13c7862e2af6ee383782eb = $(`<div id="html_51074cf3ad13c7862e2af6ee383782eb" style="width: 100.0%; height: 100.0%;">Osasco - Vila Menck</div>`)[0];
+                popup_22044522ee28d48fb44d3efbfa72c2d2.setContent(html_51074cf3ad13c7862e2af6ee383782eb);
+            
+        
+
+        marker_039646c1547b3a59db5628923cc439fb.bindPopup(popup_22044522ee28d48fb44d3efbfa72c2d2)
+        ;
+
+        
+    
+    
+            var marker_739868fede4d110421790ba37e66fa28 = L.marker(
+                [-23.570466712393976, -46.79394327939016],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_c200cf4aaecdab8eec7502137ae10355 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_739868fede4d110421790ba37e66fa28.setIcon(icon_c200cf4aaecdab8eec7502137ae10355);
+        
+    
+        var popup_263255e7d27f93ea0c029ffdbc669514 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e992b51c0172c04acc32715549a11286 = $(`<div id="html_e992b51c0172c04acc32715549a11286" style="width: 100.0%; height: 100.0%;">Osasco - Novo Osasco</div>`)[0];
+                popup_263255e7d27f93ea0c029ffdbc669514.setContent(html_e992b51c0172c04acc32715549a11286);
+            
+        
+
+        marker_739868fede4d110421790ba37e66fa28.bindPopup(popup_263255e7d27f93ea0c029ffdbc669514)
+        ;
+
+        
+    
+    
+            var marker_275b755822fa30a5b175f218fa24204c = L.marker(
+                [-23.71465469547654, -46.39398580166042],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_8a5e07c44f515bdf9a0585fc84d2d370 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_275b755822fa30a5b175f218fa24204c.setIcon(icon_8a5e07c44f515bdf9a0585fc84d2d370);
+        
+    
+        var popup_79640f6a5b599dabdf8510635178540f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08f58ffa91ae2547de868523cd66e0db = $(`<div id="html_08f58ffa91ae2547de868523cd66e0db" style="width: 100.0%; height: 100.0%;">Ribeirão Pires - Roncon</div>`)[0];
+                popup_79640f6a5b599dabdf8510635178540f.setContent(html_08f58ffa91ae2547de868523cd66e0db);
+            
+        
+
+        marker_275b755822fa30a5b175f218fa24204c.bindPopup(popup_79640f6a5b599dabdf8510635178540f)
+        ;
+
+        
+    
+    
+            var marker_0949bddf0b8ef803f04297c3e50d1c29 = L.marker(
+                [-23.571809158109836, -46.33207605208203],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_8cabb0ed891756b5c8f0688327318d1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0949bddf0b8ef803f04297c3e50d1c29.setIcon(icon_8cabb0ed891756b5c8f0688327318d1e);
+        
+    
+        var popup_68664987aea35c71df9d57f0d53e2579 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92e530b545b02d72be46786ddbc57cfe = $(`<div id="html_92e530b545b02d72be46786ddbc57cfe" style="width: 100.0%; height: 100.0%;">Suzano - Parque Residencial Casa Branca</div>`)[0];
+                popup_68664987aea35c71df9d57f0d53e2579.setContent(html_92e530b545b02d72be46786ddbc57cfe);
+            
+        
+
+        marker_0949bddf0b8ef803f04297c3e50d1c29.bindPopup(popup_68664987aea35c71df9d57f0d53e2579)
+        ;
+
+        
+    
+    
+            var marker_aa2f3592f1ab212355dc8dc3e68ff552 = L.marker(
+                [-23.573932551248213, -46.81751186828418],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_9030d3102c6946045d5ee7460d3fbfe3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_aa2f3592f1ab212355dc8dc3e68ff552.setIcon(icon_9030d3102c6946045d5ee7460d3fbfe3);
+        
+    
+        var popup_112de0c346c8dbd12360171f0bec8455 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f58e5cb66867f4aca0671180540efd2 = $(`<div id="html_7f58e5cb66867f4aca0671180540efd2" style="width: 100.0%; height: 100.0%;">Carapicuíba - Jardim Novo Horizonte</div>`)[0];
+                popup_112de0c346c8dbd12360171f0bec8455.setContent(html_7f58e5cb66867f4aca0671180540efd2);
+            
+        
+
+        marker_aa2f3592f1ab212355dc8dc3e68ff552.bindPopup(popup_112de0c346c8dbd12360171f0bec8455)
+        ;
+
+        
+    
+    
+            var marker_b779ea844f82a7aa24b8d8d586bc56d1 = L.marker(
+                [-23.535364811146504, -46.37434087809654],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_f9e9923fe66193248db9d65a73fa52ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b779ea844f82a7aa24b8d8d586bc56d1.setIcon(icon_f9e9923fe66193248db9d65a73fa52ce);
+        
+    
+        var popup_d4d733a0ff3e521aea0d33eb4724b47f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a9cc7a91bebbc6e6689864afd23fb8f = $(`<div id="html_0a9cc7a91bebbc6e6689864afd23fb8f" style="width: 100.0%; height: 100.0%;">Ferraz De Vasconcelos - Jardim Anchieta</div>`)[0];
+                popup_d4d733a0ff3e521aea0d33eb4724b47f.setContent(html_0a9cc7a91bebbc6e6689864afd23fb8f);
+            
+        
+
+        marker_b779ea844f82a7aa24b8d8d586bc56d1.bindPopup(popup_d4d733a0ff3e521aea0d33eb4724b47f)
+        ;
+
+        
+    
+    
+            var marker_9ea86bb1ef04728828649a15e2ab1b88 = L.marker(
+                [-23.53372308256496, -46.857538060952905],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_8bdc80b7486632bcd409016dcd5e3455 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9ea86bb1ef04728828649a15e2ab1b88.setIcon(icon_8bdc80b7486632bcd409016dcd5e3455);
+        
+    
+        var popup_78ea39aa797c39610b5e865c63b21775 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5e762be385c5aa50b05a94c5fa1d4fa = $(`<div id="html_d5e762be385c5aa50b05a94c5fa1d4fa" style="width: 100.0%; height: 100.0%;">Carapicuíba - Vila Helemar</div>`)[0];
+                popup_78ea39aa797c39610b5e865c63b21775.setContent(html_d5e762be385c5aa50b05a94c5fa1d4fa);
+            
+        
+
+        marker_9ea86bb1ef04728828649a15e2ab1b88.bindPopup(popup_78ea39aa797c39610b5e865c63b21775)
+        ;
+
+        
+    
+    
+            var marker_9c01224ee93397d80890a83d5f93cc4d = L.marker(
+                [-23.548417723360394, -46.83726699311341],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_feba3cbc3b37dff573e3afdb6d4e24aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9c01224ee93397d80890a83d5f93cc4d.setIcon(icon_feba3cbc3b37dff573e3afdb6d4e24aa);
+        
+    
+        var popup_374d803c46443d1a3489250ca0df5ec0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6451367777edac92a2e76c821db2b0ee = $(`<div id="html_6451367777edac92a2e76c821db2b0ee" style="width: 100.0%; height: 100.0%;">Carapicuíba - Vila Silviânia</div>`)[0];
+                popup_374d803c46443d1a3489250ca0df5ec0.setContent(html_6451367777edac92a2e76c821db2b0ee);
+            
+        
+
+        marker_9c01224ee93397d80890a83d5f93cc4d.bindPopup(popup_374d803c46443d1a3489250ca0df5ec0)
+        ;
+
+        
+    
+    
+            var marker_e7474f378097c1521b54c2bfc0df984b = L.marker(
+                [-23.601696667911977, -46.89940476752686],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_a71f9591518763f8ee0d26291c7fceb9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e7474f378097c1521b54c2bfc0df984b.setIcon(icon_a71f9591518763f8ee0d26291c7fceb9);
+        
+    
+        var popup_29a8dbc1fddb2ebad289b56c33fcebad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6ae36e076c5d95575ad8e674f8bc2288 = $(`<div id="html_6ae36e076c5d95575ad8e674f8bc2288" style="width: 100.0%; height: 100.0%;">Cotia - Jardim Sabiá</div>`)[0];
+                popup_29a8dbc1fddb2ebad289b56c33fcebad.setContent(html_6ae36e076c5d95575ad8e674f8bc2288);
+            
+        
+
+        marker_e7474f378097c1521b54c2bfc0df984b.bindPopup(popup_29a8dbc1fddb2ebad289b56c33fcebad)
+        ;
+
+        
+    
+    
+            var marker_2d9fa3de80e0bdd94e7365a6a7981692 = L.marker(
+                [-23.560614933000522, -46.368897488056064],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_be190ef1e7a1aaaaab290a701f25f6ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2d9fa3de80e0bdd94e7365a6a7981692.setIcon(icon_be190ef1e7a1aaaaab290a701f25f6ec);
+        
+    
+        var popup_9f776ae4063fe28fa5a2b035819a845d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c5c1c07305515cfbfa370b7350474e3 = $(`<div id="html_6c5c1c07305515cfbfa370b7350474e3" style="width: 100.0%; height: 100.0%;">Ferraz De Vasconcelos - Vila São Paulo</div>`)[0];
+                popup_9f776ae4063fe28fa5a2b035819a845d.setContent(html_6c5c1c07305515cfbfa370b7350474e3);
+            
+        
+
+        marker_2d9fa3de80e0bdd94e7365a6a7981692.bindPopup(popup_9f776ae4063fe28fa5a2b035819a845d)
+        ;
+
+        
+    
+    
+            var marker_0b718dc40d63883b7c3bff1ca1ca3460 = L.marker(
+                [-23.3220563834083, -46.731349624945004],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_1d9f2b2dd666e46ca922595b8ca17c19 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0b718dc40d63883b7c3bff1ca1ca3460.setIcon(icon_1d9f2b2dd666e46ca922595b8ca17c19);
+        
+    
+        var popup_1f140405300c516f9f7778f696bf129e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59f7cde9d441372bc84f804ec2436186 = $(`<div id="html_59f7cde9d441372bc84f804ec2436186" style="width: 100.0%; height: 100.0%;">Franco Da Rocha - Parque Pretoria</div>`)[0];
+                popup_1f140405300c516f9f7778f696bf129e.setContent(html_59f7cde9d441372bc84f804ec2436186);
+            
+        
+
+        marker_0b718dc40d63883b7c3bff1ca1ca3460.bindPopup(popup_1f140405300c516f9f7778f696bf129e)
+        ;
+
+        
+    
+    
+            var marker_ded60569a7cd9ce1d77d109f1a65d25f = L.marker(
+                [-23.70313668366805, -47.024805413013944],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_b26a20411bd54af5501f5f0133097216 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ded60569a7cd9ce1d77d109f1a65d25f.setIcon(icon_b26a20411bd54af5501f5f0133097216);
+        
+    
+        var popup_275fe1bc005ecf7f410187a78ecf43db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0fc4fb0a836825115090336bc6c0bc5 = $(`<div id="html_f0fc4fb0a836825115090336bc6c0bc5" style="width: 100.0%; height: 100.0%;">Cotia - São Felipe </div>`)[0];
+                popup_275fe1bc005ecf7f410187a78ecf43db.setContent(html_f0fc4fb0a836825115090336bc6c0bc5);
+            
+        
+
+        marker_ded60569a7cd9ce1d77d109f1a65d25f.bindPopup(popup_275fe1bc005ecf7f410187a78ecf43db)
+        ;
+
+        
+    
+    
+            var marker_6a1c0d0511cd4984fe90c2b084e97398 = L.marker(
+                [-23.60737154036403, -46.938788608520824],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_cbbba24c50ba6373b542457a3d96fe79 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6a1c0d0511cd4984fe90c2b084e97398.setIcon(icon_cbbba24c50ba6373b542457a3d96fe79);
+        
+    
+        var popup_1b4bf54dcfde598ed77222f44fa72704 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd774283dd7b6f49f27237cecd8de6c5 = $(`<div id="html_dd774283dd7b6f49f27237cecd8de6c5" style="width: 100.0%; height: 100.0%;">Cotia - Jardim Leonor</div>`)[0];
+                popup_1b4bf54dcfde598ed77222f44fa72704.setContent(html_dd774283dd7b6f49f27237cecd8de6c5);
+            
+        
+
+        marker_6a1c0d0511cd4984fe90c2b084e97398.bindPopup(popup_1b4bf54dcfde598ed77222f44fa72704)
+        ;
+
+        
+    
+    
+            var marker_4684e2546b176b82cd0214869c52f891 = L.marker(
+                [-23.61081255399934, -46.947027919067835],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_9fc49256606b52d2c2dfa5b996f327c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4684e2546b176b82cd0214869c52f891.setIcon(icon_9fc49256606b52d2c2dfa5b996f327c8);
+        
+    
+        var popup_8d29ac19974a5ca7aba5471b0601638c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f281a5eb48bcf3e5d7ac927fa59ebb53 = $(`<div id="html_f281a5eb48bcf3e5d7ac927fa59ebb53" style="width: 100.0%; height: 100.0%;">Cotia - Parque Santa Rita De Cássia</div>`)[0];
+                popup_8d29ac19974a5ca7aba5471b0601638c.setContent(html_f281a5eb48bcf3e5d7ac927fa59ebb53);
+            
+        
+
+        marker_4684e2546b176b82cd0214869c52f891.bindPopup(popup_8d29ac19974a5ca7aba5471b0601638c)
+        ;
+
+        
+    
+    
+            var marker_69b917f16f71d4c926120f2be624f43d = L.marker(
+                [-23.382262316342988, -46.70517503596608],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_1476fb33d909c0ede9bf324758219047 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_69b917f16f71d4c926120f2be624f43d.setIcon(icon_1476fb33d909c0ede9bf324758219047);
+        
+    
+        var popup_56dc73b604be789cdc22e12588fb0060 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2d2a32e9c201ae933a443f037743779 = $(`<div id="html_c2d2a32e9c201ae933a443f037743779" style="width: 100.0%; height: 100.0%;">Caieiras - Jardim Serra Grande</div>`)[0];
+                popup_56dc73b604be789cdc22e12588fb0060.setContent(html_c2d2a32e9c201ae933a443f037743779);
+            
+        
+
+        marker_69b917f16f71d4c926120f2be624f43d.bindPopup(popup_56dc73b604be789cdc22e12588fb0060)
+        ;
+
+        
+    
+    
+            var marker_4d0212ee5bd8204798ddd6ee13d7a716 = L.marker(
+                [-23.294353891550497, -46.73429254628137],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_c8a3ac9369835c6bb764cb8021d71bf0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4d0212ee5bd8204798ddd6ee13d7a716.setIcon(icon_c8a3ac9369835c6bb764cb8021d71bf0);
+        
+    
+        var popup_d61e282fbab3cb93b75a806e76c8a222 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fcc3ddf29fd52351da0725a265ebe7db = $(`<div id="html_fcc3ddf29fd52351da0725a265ebe7db" style="width: 100.0%; height: 100.0%;">Francisco Morato - Jardim Buenos Aires</div>`)[0];
+                popup_d61e282fbab3cb93b75a806e76c8a222.setContent(html_fcc3ddf29fd52351da0725a265ebe7db);
+            
+        
+
+        marker_4d0212ee5bd8204798ddd6ee13d7a716.bindPopup(popup_d61e282fbab3cb93b75a806e76c8a222)
+        ;
+
+        
+    
+    
+            var marker_dbfef6bd25d3c8fc72686fa3da8b2de9 = L.marker(
+                [-23.691218390461263, -46.42905481595362],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_fc3543e08a1322273f022c652bd2ba01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_dbfef6bd25d3c8fc72686fa3da8b2de9.setIcon(icon_fc3543e08a1322273f022c652bd2ba01);
+        
+    
+        var popup_54a9908176c2e3f27897b88d623455b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b082286fc119b13f9ddb44825a16556d = $(`<div id="html_b082286fc119b13f9ddb44825a16556d" style="width: 100.0%; height: 100.0%;">Ribeirão Pires - Aliança</div>`)[0];
+                popup_54a9908176c2e3f27897b88d623455b5.setContent(html_b082286fc119b13f9ddb44825a16556d);
+            
+        
+
+        marker_dbfef6bd25d3c8fc72686fa3da8b2de9.bindPopup(popup_54a9908176c2e3f27897b88d623455b5)
+        ;
+
+        
+    
+    
+            var marker_abf1a1447e205e72f6ad24141b99afa3 = L.marker(
+                [-23.527072535292287, -46.8440628550791],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_a1d70124d8a37fda6bf0016339371621 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_abf1a1447e205e72f6ad24141b99afa3.setIcon(icon_a1d70124d8a37fda6bf0016339371621);
+        
+    
+        var popup_a2c6feb02dd5e0d21f143f885eef4315 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0780a1e7b4bc7c3a89fde3ff84a6fb13 = $(`<div id="html_0780a1e7b4bc7c3a89fde3ff84a6fb13" style="width: 100.0%; height: 100.0%;">Carapicuíba - Jardim Tucunduva</div>`)[0];
+                popup_a2c6feb02dd5e0d21f143f885eef4315.setContent(html_0780a1e7b4bc7c3a89fde3ff84a6fb13);
+            
+        
+
+        marker_abf1a1447e205e72f6ad24141b99afa3.bindPopup(popup_a2c6feb02dd5e0d21f143f885eef4315)
+        ;
+
+        
+    
+    
+            var marker_fe9e4606045de409792de6317692a1e7 = L.marker(
+                [-23.600536528808515, -46.87971793637707],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_30c66072b6e2432f5b23dfd9438c24de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fe9e4606045de409792de6317692a1e7.setIcon(icon_30c66072b6e2432f5b23dfd9438c24de);
+        
+    
+        var popup_8bb91360e5395a54dfbaa5c781a626be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2bb10289a526e521123144cf37e765d = $(`<div id="html_a2bb10289a526e521123144cf37e765d" style="width: 100.0%; height: 100.0%;">Cotia - Jardim Cláudio</div>`)[0];
+                popup_8bb91360e5395a54dfbaa5c781a626be.setContent(html_a2bb10289a526e521123144cf37e765d);
+            
+        
+
+        marker_fe9e4606045de409792de6317692a1e7.bindPopup(popup_8bb91360e5395a54dfbaa5c781a626be)
+        ;
+
+        
+    
+    
+            var marker_eadd9117fe805d9f4363f4a67dadf1e2 = L.marker(
+                [-23.548643172357988, -46.35927644904021],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_6db599491d857ce9164e537a3f7d241a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_eadd9117fe805d9f4363f4a67dadf1e2.setIcon(icon_6db599491d857ce9164e537a3f7d241a);
+        
+    
+        var popup_48c3a648b8f97b22ec8d424cb5d71aae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_432c0eb556e6ce6ad533d0ce7bed1184 = $(`<div id="html_432c0eb556e6ce6ad533d0ce7bed1184" style="width: 100.0%; height: 100.0%;">Ferraz De Vasconcelos - Jardim Do Castelo</div>`)[0];
+                popup_48c3a648b8f97b22ec8d424cb5d71aae.setContent(html_432c0eb556e6ce6ad533d0ce7bed1184);
+            
+        
+
+        marker_eadd9117fe805d9f4363f4a67dadf1e2.bindPopup(popup_48c3a648b8f97b22ec8d424cb5d71aae)
+        ;
+
+        
+    
+    
+            var marker_79c9661c47f58fc306170fcea1ba8903 = L.marker(
+                [-23.510086516416877, -46.87683145382875],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_266c3e5b5d147580b2168442596a2d15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_79c9661c47f58fc306170fcea1ba8903.setIcon(icon_266c3e5b5d147580b2168442596a2d15);
+        
+    
+        var popup_448319849c3bf5ef0611304118f7f8b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9440683aea18234d3c60adb43475fc4c = $(`<div id="html_9440683aea18234d3c60adb43475fc4c" style="width: 100.0%; height: 100.0%;">Barueri - Vila São Joao</div>`)[0];
+                popup_448319849c3bf5ef0611304118f7f8b1.setContent(html_9440683aea18234d3c60adb43475fc4c);
+            
+        
+
+        marker_79c9661c47f58fc306170fcea1ba8903.bindPopup(popup_448319849c3bf5ef0611304118f7f8b1)
+        ;
+
+        
+    
+    
+            var marker_62023734ac7f6a1ceb0e53728f37f12d = L.marker(
+                [-23.53183287959506, -46.351151459596885],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_07d0c9ce2f45bec4a9da4ddbbce2b07b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_62023734ac7f6a1ceb0e53728f37f12d.setIcon(icon_07d0c9ce2f45bec4a9da4ddbbce2b07b);
+        
+    
+        var popup_62949de332aff96b238ec3f0d3359ce1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fdcebda7fab7649a00155ea0ad58f07 = $(`<div id="html_8fdcebda7fab7649a00155ea0ad58f07" style="width: 100.0%; height: 100.0%;">Poá - Jardim Estela</div>`)[0];
+                popup_62949de332aff96b238ec3f0d3359ce1.setContent(html_8fdcebda7fab7649a00155ea0ad58f07);
+            
+        
+
+        marker_62023734ac7f6a1ceb0e53728f37f12d.bindPopup(popup_62949de332aff96b238ec3f0d3359ce1)
+        ;
+
+        
+    
+    
+            var marker_b4fb7b5f8bf469f8e393f3160f1b766e = L.marker(
+                [-23.690359181622124, -46.59698477316356],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_8634898ba62b903dad379807c5049cfb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b4fb7b5f8bf469f8e393f3160f1b766e.setIcon(icon_8634898ba62b903dad379807c5049cfb);
+        
+    
+        var popup_c43069ac87c5d072af4f3c391a3b05ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb90839230be41282840515f2d274849 = $(`<div id="html_eb90839230be41282840515f2d274849" style="width: 100.0%; height: 100.0%;">Diadema - Vila Nogueira</div>`)[0];
+                popup_c43069ac87c5d072af4f3c391a3b05ad.setContent(html_eb90839230be41282840515f2d274849);
+            
+        
+
+        marker_b4fb7b5f8bf469f8e393f3160f1b766e.bindPopup(popup_c43069ac87c5d072af4f3c391a3b05ad)
+        ;
+
+        
+    
+    
+            var marker_f677f98d418e6412f2c9f7dc68590b5c = L.marker(
+                [-23.65837119212751, -46.60020570364574],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_7dad800f7e50ab1ce713fdc1025b9a1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f677f98d418e6412f2c9f7dc68590b5c.setIcon(icon_7dad800f7e50ab1ce713fdc1025b9a1e);
+        
+    
+        var popup_8b8c66bdba60514f6a6f45b35bb0228d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_240f9104380df50bbadce4d5173afd08 = $(`<div id="html_240f9104380df50bbadce4d5173afd08" style="width: 100.0%; height: 100.0%;">Diadema - Taboão</div>`)[0];
+                popup_8b8c66bdba60514f6a6f45b35bb0228d.setContent(html_240f9104380df50bbadce4d5173afd08);
+            
+        
+
+        marker_f677f98d418e6412f2c9f7dc68590b5c.bindPopup(popup_8b8c66bdba60514f6a6f45b35bb0228d)
+        ;
+
+        
+    
+    
+            var marker_60ba231b2858165edd84288b857cae17 = L.marker(
+                [-23.64858433785842, -46.995309730246696],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_3c06e104896da55bcf17b7c6e48f658c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_60ba231b2858165edd84288b857cae17.setIcon(icon_3c06e104896da55bcf17b7c6e48f658c);
+        
+    
+        var popup_492b6dc4550860c14488563b67ad588a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02cbcd251e06790c8a6ad33956f1d865 = $(`<div id="html_02cbcd251e06790c8a6ad33956f1d865" style="width: 100.0%; height: 100.0%;">Vargem Grande Paulista - Residencial Parque Emerson</div>`)[0];
+                popup_492b6dc4550860c14488563b67ad588a.setContent(html_02cbcd251e06790c8a6ad33956f1d865);
+            
+        
+
+        marker_60ba231b2858165edd84288b857cae17.bindPopup(popup_492b6dc4550860c14488563b67ad588a)
+        ;
+
+        
+    
+    
+            var marker_27fbda1cea73bd6876cf34b93ba241e3 = L.marker(
+                [-23.51432364953029, -46.838428218852115],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_8c02607f7a0219ea6e9093dd85cdf9c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_27fbda1cea73bd6876cf34b93ba241e3.setIcon(icon_8c02607f7a0219ea6e9093dd85cdf9c9);
+        
+    
+        var popup_ccb3a0748554069816a50016b2074809 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5be2811bf69800838f916a406d62101b = $(`<div id="html_5be2811bf69800838f916a406d62101b" style="width: 100.0%; height: 100.0%;">Carapicuíba - Vila Gustavo Correia</div>`)[0];
+                popup_ccb3a0748554069816a50016b2074809.setContent(html_5be2811bf69800838f916a406d62101b);
+            
+        
+
+        marker_27fbda1cea73bd6876cf34b93ba241e3.bindPopup(popup_ccb3a0748554069816a50016b2074809)
+        ;
+
+        
+    
+    
+            var marker_55e846a27b6bea937e6541f6171ae4e3 = L.marker(
+                [-23.5492106207597, -46.25152848087455],
+                {
+}
+            ).addTo(map_432d095b2ad2d52f176a022332ce1c77);
+        
+    
+            var icon_89ca2549022bdec44c51e27ea21a339b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "glyphicon glyphicon-home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_55e846a27b6bea937e6541f6171ae4e3.setIcon(icon_89ca2549022bdec44c51e27ea21a339b);
+        
+    
+        var popup_6c7f2bde3bd2f8ecb66297cda0869a2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27d6b3d4cd7fee11570176969454c205 = $(`<div id="html_27d6b3d4cd7fee11570176969454c205" style="width: 100.0%; height: 100.0%;">Mogi Das Cruzes - Jundiapeba</div>`)[0];
+                popup_6c7f2bde3bd2f8ecb66297cda0869a2b.setContent(html_27d6b3d4cd7fee11570176969454c205);
+            
+        
+
+        marker_55e846a27b6bea937e6541f6171ae4e3.bindPopup(popup_6c7f2bde3bd2f8ecb66297cda0869a2b)
+        ;
+
+        
+    
+</script>
+</html>
